@@ -4,21 +4,21 @@ pipeline {
         stage('Build') { 
             steps {
                script{
-                sh "This is Build"
+                sh 'echo This is Build'
                }
             }
         }
         stage('Test') { 
             steps {
                script{
-                sh "This is Test"
+                sh 'echo This is Test'
                } 
             }
         }
         stage('Deploy') { 
             steps {
                script{
-                sh "This is Deploy"
+                sh 'echo This is Deploy'
                }
             }
         }
