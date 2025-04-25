@@ -23,8 +23,7 @@ pipeline {
             }
         }
     }
-
-    Post{
+    post{
         always{
             echo "This section runs always"
         }
