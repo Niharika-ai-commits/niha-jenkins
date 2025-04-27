@@ -3,7 +3,7 @@ pipeline {
         label 'Agent'
     }
     options{
-        timeout(time: 10, unit: 'Minutes')
+        timeout(time: 10, unit: java.util.concurrent.TimeUnit.MINUTES)
         disableConcurrentBuilds() 
     }
     stages {
