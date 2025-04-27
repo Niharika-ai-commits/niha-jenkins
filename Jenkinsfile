@@ -4,6 +4,7 @@ pipeline {
     }
     options{
         timeout(time:10, unit: 'seconds')
+        disableconcurrentbuilds()
     }
     stages {
         stage('Build') { 
