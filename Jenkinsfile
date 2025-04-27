@@ -4,7 +4,8 @@ pipeline {
     }
     options{
         timeout(time: 10, unit: java.util.concurrent.TimeUnit.MINUTES)
-        disableConcurrentBuilds() 
+        disableConcurrentBuilds()
+        retry(1)
     }
     stages {
         stage('Build') { 
@@ -26,7 +27,7 @@ pipeline {
             steps {
                script{
                 sh 'echo This is Deploy'
-                // error 'pipeline failed'
+                error 'pipeline failed'
                }
             }
         }
